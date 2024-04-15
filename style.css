@@ -1,0 +1,263 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    color: #f1f1f1;
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-size: 20px;
+    font-style: normal;
+    letter-spacing: 1.2px;
+}
+
+
+.contenedor-video {
+    position: fixed; /* Fija la posición del contenedor en la ventana del navegador */
+    top: 0; /* Lo coloca en la parte superior de la ventana */
+    left: 0; /* Lo coloca en la parte izquierda de la ventana */
+    z-index: -1;
+}
+.video-fondo{
+    object-fit: cover; /* Ajusta el tamaño del video para que cubra completamente su contenedor */
+    
+}
+
+header{
+    background-color: red;
+    position: sticky;
+    top: 0%;
+    text-transform: uppercase;
+}
+
+
+
+i{
+    color: #f1f1f1;
+    font-size: 30px;
+}
+
+body{
+    background-color:rgb(0, 0, 0) ;
+}
+caption{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+.barra-navegacion{
+    display: flex;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    gap: 30px;
+}
+.logo-secciones{
+    gap: 20px;
+    display: flex;
+    align-items: center;
+}
+.secciones{
+    list-style: none;
+    display: flex;
+    gap: 8px;
+}
+.buscar-carrito{
+    display: flex;
+    flex: 1;
+    justify-content: end;
+    gap: 10px;
+    margin-right: 10px;
+}
+
+
+.secciones a{
+    text-decoration: none;
+}
+
+.secciones a:hover{
+    color: red;
+    
+}
+#img-banner{
+    max-width: 100%;
+}
+section{
+    display: flex;
+    justify-content: center;
+    
+}
+figure{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.card figure{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 250px;
+}
+
+.card img{
+    width: 400px;
+    min-height: 100%;
+    object-position: cover;
+    object-fit: top-left;
+}
+/* #img-tour{
+    border: 1px solid #ccc;
+    min-width: 250px;
+    min-height: 200px;
+    background:url(/img/tour.webp) ;
+}
+#img-order{
+    border: 1px solid #ccc;
+    min-width: 250px;
+    min-height: 200px;
+    background:url(/img/Order.webp) ;
+}
+#img-listen{
+    border: 1px solid #ccc;
+    min-width: 250px;
+    min-height: 200px;
+    background:url(/img/listen.webp) ;
+} */
+
+
+
+#grid-cards{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    border-radius: 1px solid rgb(128, 23, 23);
+    row-gap:  50px;
+    column-gap: 300px;
+}
+
+
+.card{
+
+    /* min-width: 300px;
+    /* min-h */
+    overflow: hidden;
+    height: 300px;
+    max-width: 400px;
+}
+
+.grid-ecomerce{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    margin-top: 80px;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+.producto{
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+    min-width: 300px;
+    min-height: 250px;
+}
+
+.producto img{
+    min-width: 250px;
+    min-height: 200px;
+    object-position: cover;
+}
+
+.producto figure{
+    max-width: 250px;
+    max-height: 200px;
+}
+button{
+    border-radius: 100px;
+    padding: 10px;
+    border:none;
+    color:black;
+    background-color: white;
+    font-size: 16px;
+    font-family:'Neue Haas Grotesk Display Pro';
+
+}
+
+.texto-boletos{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+}
+
+#ticket-lista{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border-top: 1px solid white;
+    gap: 20px;
+}
+
+/* #ticket-lista button{
+    width: 90px;
+    height: 30px
+} */
+.tickets{
+   display: flex;
+   align-items: center;
+   background: black;
+   width: 98vw;
+   justify-content: space-between;
+   border-bottom: 1px solid white;
+   padding: 10px;
+   font-size: 5px;
+   
+}
+
+
+.follow-calltoaction{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px;
+    gap: 30px;
+}
+
+.redes-sociales{
+    display: flex;
+    justify-content: center;
+
+}
+
+
+@media screen and (max-width: 680px){
+    .barra-navegacion{
+        flex-direction: column;
+    }
+    .secciones{
+        list-style: none;
+        display: block;
+        gap: 8px;
+    }
+    #grid-cards{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        border-radius: 1px solid rgb(128, 23, 23);
+        row-gap:  10px;
+        column-gap: 10px;
+        
+    }
+    .grid-ecomerce{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        border-radius: 1px solid rgb(128, 23, 23);
+        row-gap:  10px;
+        column-gap: 10px;
+    }
+    .tickets{
+        display: none;
+    }
+}   
